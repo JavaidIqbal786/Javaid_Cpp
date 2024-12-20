@@ -1,6 +1,4 @@
-
 #include <iostream>
-
 using namespace std;
 
 void drawTriangle(char border, char filler, int length)
@@ -35,7 +33,6 @@ void drawTriangle(char border, char filler, int length)
     }
     cout << endl;
 }
-
 
 int main()
 {
