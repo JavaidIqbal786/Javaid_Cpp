@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstdlib>
+#include <cstdlib>    //For rand() Function
 #include <ctime>
 using namespace std;
 
@@ -9,7 +9,7 @@ class Score {
 public:
 
     Score(int initialScore) : score(initialScore) {}
-
+// Overloading Pre-increment and pre-decrement operator
     Score& operator++() {
         ++score;
         return *this;
@@ -19,6 +19,11 @@ public:
         --score;
         return *this;
     }
+//// Overloading Post-increment and post-decrement operator
+    Score operator++(int) {
+        Score temp = *this;
+        score++;
+        return temp;
 
     Score operator--(int) {
         Score temp = *this;
